@@ -2,9 +2,24 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  name_hash.length 
-  if name_hash.index[0] < name_hash.index[1]
-    puts 
+  count = 0;
+  least_value = nil;
+  least_key = nil;
+  name_hash.each do |key, value|
+    if count == 0 then
+      least_value = value;
+      least_key = key;
+
+end 
+      count += 1;
+    else
+      if value < least_value then
+        least_value = value;
+        least_key = key;
+      end
+    end
+  end
+
+  return least_key;
 end
 
-#see how many elements are in the array use index to compare the min value of the one next to it //like a bracket until min value is left.
