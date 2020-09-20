@@ -12,7 +12,7 @@ def key_for_min_value(name_hash)
 
 end 
       count += 1;
-    else
+    #else
       if value < least_value then
         least_value = value;
         least_key = key;
