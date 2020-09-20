@@ -1,7 +1,7 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-key_for_min_value(hash)
+def key_for_min_value(hash)
   end
 
   it "does not call the `#sort_by` method" do
